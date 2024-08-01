@@ -41,8 +41,8 @@ Create a project using the official Android Studio IDE that includes the followi
 
 ### Recordings:
 
-![App Demo 1](gif/recording3.gif)
-
-![App Demo 2](gif/recording2.gif)
-
-![App Demo 3](gif/recording.gif)
+<p align="center">
+  <img src="gif/recording3.gif" alt="App Demo 1" width="300">
+  <img src="gif/recording2.gif" alt="App Demo 2" width="300">
+  <img src="gif/recording.gif" alt="App Demo 3" width="300">
+</p>
