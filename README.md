@@ -1,4 +1,4 @@
-# Android App Development with Kotlin - Module 4 Assignment 📱💻
+# 📱💻 Android App Development with Kotlin - Module 4 Assignment 📱💻
 
 ## Team Members:
 
@@ -41,6 +41,8 @@ Create a project using the official Android Studio IDE that includes the followi
 
 ### Recordings:
 
-- [Recording 1](gif/recording3.gif)
-- [Recording 2](gif/recording2.gif)
-- [Recording 3](gif/recording1.gif)
+![App Demo 1](gif/recording3.gif)
+
+![App Demo 2](gif/recording2.gif)
+
+![App Demo 3](gif/recording1.gif)
