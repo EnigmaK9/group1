@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidBasic12"
 include(":app")
- 
