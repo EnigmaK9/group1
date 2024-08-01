@@ -45,4 +45,4 @@ Create a project using the official Android Studio IDE that includes the followi
 
 ![App Demo 2](gif/recording2.gif)
 
-![App Demo 3](gif/recording1.gif)
+![App Demo 3](gif/recording.gif)
