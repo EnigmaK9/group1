@@ -25,6 +25,7 @@ class SecondActivity : AppCompatActivity() {
 
         val labelName = findViewById<TextView>(R.id.labelName)
         val btnReturn = findViewById<Button>(R.id.btnReturn)
+        val btnReturnToHome = findViewById<Button>(R.id.btnReturnToHome)
 
         intent.extras?.let { extras ->
             if (extras.containsKey("EXTRA_NAME_KEY")) {
@@ -59,7 +60,7 @@ class SecondActivity : AppCompatActivity() {
                     "Lastname of Carlos is: $surnameCarlos",
                     "Lastname of Sebastian is: $surnameSebastian",
                     "Lastname of Alan is: $surnameAlan",
-                    "Address: $address\nStudent: $isStudent",
+                    "Address: $address\nStudents: $isStudent",
                     "Email: $email\nPhone: $phone",
                     "Job Title: $jobTitle\nCompany: $company",
                     "University: $university\nMajor: $major",
@@ -68,15 +69,16 @@ class SecondActivity : AppCompatActivity() {
 
                 val handler = Handler(Looper.getMainLooper())
                 var delay = 0L
-
+                // This for cycle will iterate the list created above and show a toast message for each element
+                // it has a delay for each iteration of 2 seconds
                 for (message in toastMessages) {
                     handler.postDelayed({
                         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
                     }, delay)
-                    delay += 5000 // delay de 2 secs entre cada toast c:
+                    delay += 2000 // 2 seconds delay
                 }
             }
-
+            // This button is used to finish the app
             btnReturn.setOnClickListener {
                 val resultIntent = Intent().apply {
                     putExtra("EXTRA_IS_CORRECT_KEY", true)
@@ -84,6 +86,12 @@ class SecondActivity : AppCompatActivity() {
                 setResult(RESULT_OK, resultIntent)
                 finish()
             }
+            // This button is used to return to the HomeActivity
+            btnReturnToHome.setOnClickListener {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            }
+
         }
     }
 }

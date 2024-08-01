@@ -32,6 +32,8 @@
 
         <activity android:name=".ejerciciosclase.ejercicio01.CreationExample2Activity"
             android:exported="true" />
+        <activity android:name=".ejerciciosclase.ejercicio01.LifeCycleActivity"
+            android:exported="true" />
 
     </application>
 

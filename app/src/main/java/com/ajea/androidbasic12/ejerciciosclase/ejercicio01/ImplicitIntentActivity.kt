@@ -48,7 +48,7 @@ class ImplicitIntentActivity : AppCompatActivity() {
         }
 
         btnSendUrl4.setOnClickListener {
-            val urlIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://es.quora.com/"))
+            val urlIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"))
             startActivity(Intent.createChooser(urlIntent, "Open using:"))
         }
 
