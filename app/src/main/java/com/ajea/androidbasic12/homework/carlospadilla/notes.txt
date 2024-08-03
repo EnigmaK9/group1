@@ -1,0 +1,13 @@
+un activity principal
+el boton 3 manda a llamar la de sebastian
+se ejecuta ese home, y ya nada mas si oprimo el boton 1
+manda a llamar todo el flujo que hizo alan
+el boton 2 manda a lo de carlos
+boton 3 el de sebastian
+la parte de resources se ve la siguiente clase
+se pone una definition de una variable en algun lado
+se manda a llamar si es en inglés, español
+archivo xml para cada idioma
+dependiendo de cada idioma, jala ese archivo
+si selecciona spanish jala el texto en españolo
+si el usuario selecciona english jala los textos en ingles
