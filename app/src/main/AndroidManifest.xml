@@ -39,27 +39,27 @@
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.ejercicio01.explicitintent.HomeActivity"
+            android:name=".classassignments.ejercicio01.assignment01.explicitintent.HomeActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.ejercicio01.explicitintent.SecondActivity"
+            android:name=".classassignments.ejercicio01.assignment01.explicitintent.SecondActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.ejercicio01.ImplicitIntentActivity"
+            android:name=".classassignments.ejercicio01.assignment01.ImplicitIntentActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.ejercicio01.ExampleActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".classassignments.ejercicio01.ejercicio01.CreationExample2Activity"
+            android:name=".classassignments.ejercicio01.assignment01.ExampleActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.ejercicio01.LifeCycleActivity"
+            android:name=".classassignments.ejercicio01.assignment01.CreationExample2Activity"
+            android:exported="true" />
+
+        <activity
+            android:name=".classassignments.ejercicio01.assignment01.LifeCycleActivity"
             android:exported="true" />
 
     </application>

@@ -6,7 +6,7 @@
 * Giovanni Sebastian Verastegui Perez
 * */
 
-package com.ajea.androidbasic12.classassignments.ejercicio01.ejercicio01.explicitintent
+package com.ajea.androidbasic12.classassignments.ejercicio01.assignment01.explicitintent
 
 import android.content.Intent
 import android.os.Bundle

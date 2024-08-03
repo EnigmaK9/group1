@@ -1,4 +1,4 @@
-package com.ajea.androidbasic12.classassignments.ejercicio01.ejercicio01
+package com.ajea.androidbasic12.classassignments.ejercicio01.assignment01
 
 import android.content.Intent
 import android.net.Uri
