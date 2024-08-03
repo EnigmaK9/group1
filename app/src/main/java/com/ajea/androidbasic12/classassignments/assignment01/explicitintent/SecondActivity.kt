@@ -1,4 +1,4 @@
-package com.ajea.androidbasic12.classassignments.ejercicio01.assignment01.explicitintent
+package com.ajea.androidbasic12.classassignments.assignment01.explicitintent
 
 import android.os.Bundle
 import android.view.MenuItem

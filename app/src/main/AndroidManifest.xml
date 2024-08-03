@@ -14,7 +14,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".classassignments.ejercicio02.graphic_components.ComponentsActivity"
+            android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".classassignments.ejercicio02.graphic_components.ConstraintLayoutActivity"
+            android:name=".classassignments.assignment02.graphic_components.ConstraintLayoutActivity"
             android:exported="true" />
 
         <activity
@@ -39,27 +39,28 @@
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.assignment01.explicitintent.HomeActivity"
+            android:name=".classassignments.assignment01.CreationExample2Activity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.assignment01.explicitintent.SecondActivity"
+            android:name=".classassignments.assignment01.ExampleActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.assignment01.ImplicitIntentActivity"
+            android:name=".classassignments.assignment01.ImplicitIntentActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.assignment01.ExampleActivity"
+            android:name=".classassignments.assignment01.LifeCycleActivity"
+            android:exported="true" />
+
+        <!-- Asegúrate de tener la HomeActivity y la SecondActivity si existen en tu proyecto -->
+        <activity
+            android:name=".classassignments.assignment01.explicitintent.HomeActivity"
             android:exported="true" />
 
         <activity
-            android:name=".classassignments.ejercicio01.assignment01.CreationExample2Activity"
-            android:exported="true" />
-
-        <activity
-            android:name=".classassignments.ejercicio01.assignment01.LifeCycleActivity"
+            android:name=".classassignments.assignment01.explicitintent.SecondActivity"
             android:exported="true" />
 
     </application>

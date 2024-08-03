@@ -1,4 +1,4 @@
-package com.ajea.androidbasic12.classassignments.ejercicio02.graphic_components
+package com.ajea.androidbasic12.classassignments.assignment02.graphic_components
 
 import android.os.Bundle
 import android.text.Editable
