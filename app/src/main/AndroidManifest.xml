@@ -15,7 +15,12 @@
 
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.ComponentsActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.ConstraintLayoutActivity"
@@ -31,12 +36,7 @@
 
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.FrameLayoutActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
 
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.explicitintent.HomeActivity"
