@@ -41,4 +41,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Login" />
+
+    <TextView
+        android:textSize="18sp"
+        android:text="Recover your password"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHOrizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
