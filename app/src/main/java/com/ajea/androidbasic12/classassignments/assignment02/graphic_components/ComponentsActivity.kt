@@ -101,6 +101,7 @@ class ComponentsActivity : AppCompatActivity() {
         }
 
         btGetInfo.setOnClickListener {
+            val cbStatus = cbLoseWeight.isChecked
             val selectedSex = when (rgSex.checkedRadioButtonId) {
                 R.id.rbWomen -> "Female"
                 R.id.rbMen -> "Male"
@@ -108,7 +109,8 @@ class ComponentsActivity : AppCompatActivity() {
             }
             val height = etHeight.text.toString()
             val weight = etWeight.text.toString()
-            Toast.makeText(this, "Sex: $selectedSex, Height: $height cm, Weight: $weight kg", Toast.LENGTH_SHORT).show()
+            val itemSpinnerSelected = spinner.selectedItem.toString()
+            Toast.makeText(this, "Lose weight: $cbStatus, Sex: $selectedSex, Height: $height cm, Weight: $weight kg, Country: $itemSpinnerSelected", Toast.LENGTH_SHORT).show()
         }
     }
 }
