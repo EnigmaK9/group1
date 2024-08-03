@@ -4,13 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.RadioGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.ajea.androidbasic12.R
 
@@ -24,6 +18,7 @@ class ComponentsActivity : AppCompatActivity() {
         val tvLoseWeight = findViewById<TextView>(R.id.tvLoseWeight)
         val llDetails = findViewById<LinearLayout>(R.id.llDetails)
         val rgSex = findViewById<RadioGroup>(R.id.rgSex)
+        val spinner = findViewById<Spinner>(R.id.spinner)
         val etHeight = findViewById<EditText>(R.id.etHeight)
         val etWeight = findViewById<EditText>(R.id.etWeight)
         val btGetInfo = findViewById<Button>(R.id.btGetInfo)
@@ -72,6 +67,7 @@ class ComponentsActivity : AppCompatActivity() {
             }
         }
 
+        // RadioGroup
         rgSex.setOnCheckedChangeListener { _, id ->
             val idName = when (id) {
                 R.id.rbWomen -> "Female"
@@ -79,6 +75,29 @@ class ComponentsActivity : AppCompatActivity() {
                 else -> "Unknown"
             }
             Toast.makeText(this, "Selected sex: $idName", Toast.LENGTH_SHORT).show()
+        }
+
+        // Spinner
+        val dataCollection = arrayListOf("México", "Colombia", "Canada", "Argentina", "Denmark", "Venezuela", "España")
+        val adapter = ArrayAdapter(this, R.layout.spinner_item, dataCollection).also {
+            it.setDropDownViewResource(R.layout.spinner_dropdown_item)
+        }
+        spinner.adapter = adapter
+
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                val itemSelected = dataCollection[position]
+                Toast.makeText(this@ComponentsActivity, "Selected country: $itemSelected", Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // No action needed
+            }
         }
 
         btGetInfo.setOnClickListener {
