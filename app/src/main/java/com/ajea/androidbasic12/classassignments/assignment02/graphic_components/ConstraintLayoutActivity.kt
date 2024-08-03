@@ -2,13 +2,11 @@ package com.ajea.androidbasic12.classassignments.ejercicio02.graphic_components
 
 import android.os.Bundle
 import android.text.Editable
+import android.text.SpannableString
 import android.text.TextWatcher
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.ProgressBar
-import android.widget.Toast
+import android.text.method.LinkMovementMethod
+import android.text.style.UnderlineSpan
+import android.widget.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +20,7 @@ class ConstraintLayoutActivity : AppCompatActivity() {
     private lateinit var rememberMeCheckBox: CheckBox
     private lateinit var loadingProgressBar: ProgressBar
     private lateinit var helpButton: ImageButton
+    private lateinit var forgotPasswordTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +41,13 @@ class ConstraintLayoutActivity : AppCompatActivity() {
         rememberMeCheckBox = findViewById(R.id.cbRememberMe)
         loadingProgressBar = findViewById(R.id.pbLoading)
         helpButton = findViewById(R.id.ibHelp)
+        forgotPasswordTextView = findViewById(R.id.tvForgotPassword)
+
+        // Add underline to forgotPasswordTextView programmatically
+        val forgotPasswordText = SpannableString(forgotPasswordTextView.text.toString())
+        forgotPasswordText.setSpan(UnderlineSpan(), 0, forgotPasswordText.length, 0)
+        forgotPasswordTextView.text = forgotPasswordText
+        forgotPasswordTextView.movementMethod = LinkMovementMethod.getInstance()
 
         // Add TextWatcher to EditText
         emailEditText.addTextChangedListener(loginTextWatcher)
@@ -55,6 +61,11 @@ class ConstraintLayoutActivity : AppCompatActivity() {
         // Set onClickListener for help button
         helpButton.setOnClickListener {
             showHelp()
+        }
+
+        // Set onClickListener for forgot password TextView
+        forgotPasswordTextView.setOnClickListener {
+            Toast.makeText(this, "Function not implemented yet", Toast.LENGTH_SHORT).show()
         }
     }
 

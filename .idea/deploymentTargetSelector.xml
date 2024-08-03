@@ -22,10 +22,10 @@
       <SelectionState runConfigName="LinearLayoutActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="RelativeLayoutActivity">
+      <SelectionState runConfigName="ConstraintLayoutActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ConstraintLayoutActivity">
+      <SelectionState runConfigName="ConstraintLayoutActivity (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
