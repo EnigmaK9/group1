@@ -45,7 +45,7 @@
 
     <TextView
         android:textSize="18sp"
-        android:text="Recover your password"
+        android:text="Forgot your password?"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"

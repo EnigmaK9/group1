@@ -14,13 +14,17 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
+            android:name=".classassignments.assignment02.graphic_components.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
+            android:exported="true" />
 
         <activity
             android:name=".classassignments.assignment02.graphic_components.ConstraintLayoutActivity"
@@ -36,31 +40,6 @@
 
         <activity
             android:name=".classassignments.assignment02.graphic_components.FrameLayoutActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".classassignments.assignment01.CreationExample2Activity"
-            android:exported="true" />
-
-        <activity
-            android:name=".classassignments.assignment01.ExampleActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".classassignments.assignment01.ImplicitIntentActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".classassignments.assignment01.LifeCycleActivity"
-            android:exported="true" />
-
-        <!-- Asegúrate de tener la HomeActivity y la SecondActivity si existen en tu proyecto -->
-        <activity
-            android:name=".classassignments.assignment01.explicitintent.HomeActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".classassignments.assignment01.explicitintent.SecondActivity"
             android:exported="true" />
 
     </application>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D9D8C2"
-    tools:context=".classassignments.ejercicio02.graphic_components.ConstraintLayoutActivity"><androidx.constraintlayout.widget.Guideline
+    tools:context=".classassignments.assignment02.graphic_components.ConstraintLayoutActivity"><androidx.constraintlayout.widget.Guideline
     android:id="@+id/glStart"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
