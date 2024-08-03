@@ -19,13 +19,13 @@ class ComponentsActivity : AppCompatActivity() {
         val llDetails = findViewById<LinearLayout>(R.id.llDetails)
         val rgSex = findViewById<RadioGroup>(R.id.rgSex)
         val spinner = findViewById<Spinner>(R.id.spinner)
+        val etName = findViewById<EditText>(R.id.etName)
         val etHeight = findViewById<EditText>(R.id.etHeight)
         val etWeight = findViewById<EditText>(R.id.etWeight)
         val btGetInfo = findViewById<Button>(R.id.btGetInfo)
 
         cbLoseWeight.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                // Fade out the CheckBox and TextView to black
                 val fadeOut = AlphaAnimation(1f, 0f)
                 fadeOut.duration = 500
                 fadeOut.setAnimationListener(object : Animation.AnimationListener {
@@ -33,26 +33,22 @@ class ComponentsActivity : AppCompatActivity() {
                     override fun onAnimationEnd(animation: Animation) {
                         cbLoseWeight.visibility = View.GONE
                         tvLoseWeight.visibility = View.GONE
-                        // Fade in the LinearLayout from black
                         val fadeIn = AlphaAnimation(0f, 1f)
                         fadeIn.duration = 500
                         llDetails.visibility = View.VISIBLE
                         llDetails.startAnimation(fadeIn)
                     }
-
                     override fun onAnimationRepeat(animation: Animation) {}
                 })
                 cbLoseWeight.startAnimation(fadeOut)
                 tvLoseWeight.startAnimation(fadeOut)
             } else {
-                // Fade out the LinearLayout to black
                 val fadeOut = AlphaAnimation(1f, 0f)
                 fadeOut.duration = 500
                 fadeOut.setAnimationListener(object : Animation.AnimationListener {
                     override fun onAnimationStart(animation: Animation) {}
                     override fun onAnimationEnd(animation: Animation) {
                         llDetails.visibility = View.GONE
-                        // Fade in the CheckBox and TextView from black
                         val fadeIn = AlphaAnimation(0f, 1f)
                         fadeIn.duration = 500
                         cbLoseWeight.visibility = View.VISIBLE
@@ -60,14 +56,12 @@ class ComponentsActivity : AppCompatActivity() {
                         cbLoseWeight.startAnimation(fadeIn)
                         tvLoseWeight.startAnimation(fadeIn)
                     }
-
                     override fun onAnimationRepeat(animation: Animation) {}
                 })
                 llDetails.startAnimation(fadeOut)
             }
         }
 
-        // RadioGroup
         rgSex.setOnCheckedChangeListener { _, id ->
             val idName = when (id) {
                 R.id.rbWomen -> "Female"
@@ -77,7 +71,6 @@ class ComponentsActivity : AppCompatActivity() {
             Toast.makeText(this, "Selected sex: $idName", Toast.LENGTH_SHORT).show()
         }
 
-        // Spinner
         val dataCollection = arrayListOf("México", "Colombia", "Canada", "Argentina", "Denmark", "Venezuela", "España")
         val adapter = ArrayAdapter(this, R.layout.spinner_item, dataCollection).also {
             it.setDropDownViewResource(R.layout.spinner_dropdown_item)
@@ -110,7 +103,14 @@ class ComponentsActivity : AppCompatActivity() {
             val height = etHeight.text.toString()
             val weight = etWeight.text.toString()
             val itemSpinnerSelected = spinner.selectedItem.toString()
-            Toast.makeText(this, "Lose weight: $cbStatus, Sex: $selectedSex, Height: $height cm, Weight: $weight kg, Country: $itemSpinnerSelected", Toast.LENGTH_SHORT).show()
+
+            if (etName.text.toString().isNotEmpty() && height.isNotEmpty() && weight.isNotEmpty()) {
+                val heightInMeters = height.toDouble() / 100
+                val bmi = weight.toDouble() / (heightInMeters * heightInMeters)
+                Toast.makeText(this, "Lose weight: $cbStatus, Sex: $selectedSex, Height: $height cm, Weight: $weight kg, Country: $itemSpinnerSelected, Name: ${etName.text}, BMI: %.2f".format(bmi), Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this, "You should enter your name, height, and weight", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
