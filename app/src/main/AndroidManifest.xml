@@ -12,45 +12,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasic12"
         tools:targetApi="31">
+
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.ComponentsActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.ConstraintLayoutActivity"
             android:exported="true" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.RelativeLayoutActivity"
             android:exported="false" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.LinearLayoutActivity"
             android:exported="true" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio02.graphic_components.FrameLayoutActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.explicitintent.HomeActivity"
             android:exported="true" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.explicitintent.SecondActivity"
             android:exported="true" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.ImplicitIntentActivity"
             android:exported="true" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.ExampleActivity"
             android:exported="false" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.CreationExample2Activity"
             android:exported="true" />
+
         <activity
             android:name=".ejerciciosclase.ejercicio01.ejercicio01.LifeCycleActivity"
             android:exported="true" />
-    </application>
 
+    </application>
 </manifest>

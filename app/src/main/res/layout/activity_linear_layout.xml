@@ -15,7 +15,7 @@
         android:layout_height="0dp" />
     <TextView
         android:text="Texto 2"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_orange_dark"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp" />
