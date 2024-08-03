@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ejercicio2.componentesgraficos.LinearLayoutActivity">
+    tools:context=".ejerciciosclase.ejercicio02.graphic_components.LinearLayoutActivity">
 
     <TextView
         android:text="Texto 1"
@@ -13,6 +13,7 @@
         android:layout_weight="4"
         android:layout_width="match_parent"
         android:layout_height="0dp" />
+
     <TextView
         android:text="Texto 2"
         android:background="@android:color/holo_orange_dark"
@@ -31,21 +32,21 @@
             android:background="@android:color/holo_orange_dark"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <TextView
             android:text="Texto 4"
             android:background="@android:color/darker_gray"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"/>
+            android:layout_weight="2" />
 
         <TextView
             android:text="Texto 5"
             android:background="@android:color/holo_orange_dark"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>
