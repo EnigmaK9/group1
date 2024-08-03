@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejerciciosclase.ejercicio01.ImplicitIntentActivity">
+    tools:context=".ejerciciosclase.ejercicio01.ejercicio01.ImplicitIntentActivity">
 
     <Button
         android:id="@+id/btnSendUrl"

@@ -1,4 +1,4 @@
-package com.ajea.androidbasic12.ejerciciosclase.ejercicio01
+package com.ajea.androidbasic12.ejerciciosclase.ejercicio01.ejercicio01
 
 import android.os.Bundle
 import android.util.Log

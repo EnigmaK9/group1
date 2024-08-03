@@ -6,7 +6,7 @@
 * Giovanni Sebastian Verastegui Perez
 * */
 
-package com.ajea.androidbasic12.ejerciciosclase.ejercicio01.explicitintent
+package com.ajea.androidbasic12.ejerciciosclase.ejercicio01.ejercicio01.explicitintent
 
 import android.content.Intent
 import android.os.Bundle
@@ -34,6 +34,8 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         val btnSendActivity = findViewById<Button>(R.id.btnSendActivity)
 
