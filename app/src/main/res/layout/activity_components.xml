@@ -5,44 +5,135 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".classassignments.assignment02.graphic_components.ComponentsActivity">
+    tools:context=".classassignments.assignment02.graphic_components.ComponentsActivity"
+    android:background="@android:color/black">
 
-    <CheckBox
-        android:id="@+id/cbCreditCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Do you have a credit card?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <RadioGroup
-        android:id="@+id/rgSex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/tvLoseWeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            android:background="@drawable/doubt_app_background"
+            android:padding="16dp" />
+
+        <CheckBox
+            android:id="@+id/cbLoseWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Do you want to lose weight?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbCreditCard">
+        android:visibility="gone"
+        android:padding="16dp"
+        android:background="@drawable/weight_loss_app_background">
 
-        <RadioButton
-            android:id="@+id/rbWomen"
+        <TextView
+            android:id="@+id/tvSex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Women" />
+            android:text="Sex:"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
 
-        <RadioButton
-            android:id="@+id/rbMen"
+        <RadioGroup
+            android:id="@+id/rgSex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Men" />
-    </RadioGroup>
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
 
-    <Button
-        android:id="@+id/btGetInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="Obtain information"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            <RadioButton
+                android:id="@+id/rbWomen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbMen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height (cm):"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background_transparent"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg):"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background_transparent"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btGetInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Get Information"
+            android:backgroundTint="#ED0F21"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

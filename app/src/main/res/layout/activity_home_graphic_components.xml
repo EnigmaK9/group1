@@ -5,56 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9D8C2"
     tools:context=".classassignments.assignment02.graphic_components.HomeActivity">
 
     <Button
         android:id="@+id/btnComponents"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Components Activity"
+        android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnConstraintLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btnConstraintLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ConstraintLayout Activity"
+        android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toBottomOf="@id/btnComponents"
+        app:layout_constraintBottom_toTopOf="@id/btnFrameLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btnFrameLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="FrameLayout Activity"
+        android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toBottomOf="@id/btnConstraintLayout"
+        app:layout_constraintBottom_toTopOf="@id/btnLinearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btnLinearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="LinearLayout Activity"
+        android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toBottomOf="@id/btnFrameLayout"
+        app:layout_constraintBottom_toTopOf="@id/btnRelativeLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btnRelativeLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="RelativeLayout Activity"
+        android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toBottomOf="@id/btnLinearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
