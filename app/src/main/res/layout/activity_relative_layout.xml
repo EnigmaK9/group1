@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejerciciosclase.ejercicio02.graphic_components.RelativeLayoutActivity">
+    tools:context=".classassignments.ejercicio02.graphic_components.RelativeLayoutActivity">
 
     <TextView
         android:id="@+id/textView"

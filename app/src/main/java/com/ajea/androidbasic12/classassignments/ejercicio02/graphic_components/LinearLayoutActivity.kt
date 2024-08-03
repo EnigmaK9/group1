@@ -1,4 +1,4 @@
-package com.ajea.androidbasic12.ejerciciosclase.ejercicio02.graphic_components
+package com.ajea.androidbasic12.classassignments.ejercicio02.graphic_components
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,11 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.ajea.androidbasic12.R
 
-class ConstraintLayoutActivity : AppCompatActivity() {
+class LinearLayoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_constraint_layout)
+        setContentView(R.layout.activity_linear_layout)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

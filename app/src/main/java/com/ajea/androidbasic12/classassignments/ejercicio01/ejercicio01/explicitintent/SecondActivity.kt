@@ -1,8 +1,7 @@
-package com.ajea.androidbasic12.ejerciciosclase.ejercicio01.ejercicio01.explicitintent
+package com.ajea.androidbasic12.classassignments.ejercicio01.ejercicio01.explicitintent
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 // ... other imports

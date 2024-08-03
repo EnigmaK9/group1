@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejerciciosclase.ejercicio01.ejercicio01.explicitintent.HomeActivity">
+    tools:context=".classassignments.ejercicio01.ejercicio01.explicitintent.HomeActivity">
 
     <Button
         android:id="@+id/btnSendActivity"
