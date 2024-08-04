@@ -19,13 +19,13 @@ class AnimalListActivity : AppCompatActivity() {
         val data = listOf(
             animalEntity("Lion", "yellow", "lion"),
             animalEntity("Tiger", "orange", "tiger"),
-            animalEntity("Elephant", "brown", "elephant"),
-            animalEntity("Zebra", "brown", "zebra"),
-            animalEntity("Giraffe", "brown", "giraffe"),
-            animalEntity("Penguin", "blue", "penguin"),
+            animalEntity("Elephant", "gray", "elephant"),
+            animalEntity("Zebra", "white and black", "zebra"),
+            animalEntity("Giraffe", "yellow with brown", "giraffe"),
+            animalEntity("Penguin", "black with white belly", "penguin"),
             animalEntity("Kangaroo", "brown", "kangaroo"),
-            animalEntity("Koala", "brown", "koala"),
-            animalEntity("Hippopotamus", "brown", "hippo")
+            animalEntity("Koala", "gray", "koala"),
+            animalEntity("Hippopotamus", "gray", "hippo")
         )
 
         // Se crea el adaptador personalizado
@@ -33,6 +33,6 @@ class AnimalListActivity : AppCompatActivity() {
         //centrados, nombres de personas centrados
         list.adapter = adapter
         // list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        list.layoutManager = GridLayoutManager(this, 2)
+        list.layoutManager = GridLayoutManager(this, 1)
     }
 }
