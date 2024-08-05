@@ -14,7 +14,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".classassignments.assignment02.graphic_components.list.AnimalListActivity"
+            android:name=".classassignments.assignment02.graphic_components.listpeople.PeopleListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +24,7 @@
 
         <activity
             android:name=".classassignments.assignment02.graphic_components.HomeActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
             android:exported="true" />

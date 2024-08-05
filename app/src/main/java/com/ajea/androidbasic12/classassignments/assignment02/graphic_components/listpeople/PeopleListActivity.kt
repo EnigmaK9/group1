@@ -14,15 +14,15 @@ class PeopleListActivity : AppCompatActivity() {
         val list = findViewById<RecyclerView>(R.id.peopleList)
 
         val data = listOf(
-            PeopleEntity("John Doe", "Developer", "john_doe"),
-            PeopleEntity("Jane Smith", "Designer", "jane_smith"),
-            PeopleEntity("Michael Brown", "Manager", "michael_brown"),
-            PeopleEntity("Emily Davis", "Analyst", "emily_davis"),
-            PeopleEntity("Daniel Wilson", "Tester", "daniel_wilson"),
-            PeopleEntity("Sarah Johnson", "Product Owner", "sarah_johnson"),
-            PeopleEntity("David Lee", "Developer", "david_lee"),
-            PeopleEntity("Laura Martinez", "Scrum Master", "laura_martinez"),
-            PeopleEntity("James Anderson", "Architect", "james_anderson")
+            PeopleEntity("John Doe", "Developer", "male01"),
+            PeopleEntity("Jane Smith", "Designer", "female02"),
+            PeopleEntity("Michael Brown", "Manager", "male02"),
+            PeopleEntity("Emily Davis", "Analyst", "female03"),
+            PeopleEntity("Daniel Wilson", "Tester", "male03"),
+            PeopleEntity("Sarah Johnson", "Product Owner", "female04"),
+            PeopleEntity("David Lee", "Developer", "male04"),
+            PeopleEntity("Laura Martinez", "Scrum Master", "female05"),
+            PeopleEntity("James Anderson", "Architect", "male05")
         )
 
         // Se crea el adaptador personalizado

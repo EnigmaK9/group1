@@ -8,14 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ajea.androidbasic12.R
 
-data class PeopleEntity(val name: String, val role: String, val image: String)
-
-class PeopleAdapter(val list: List<PeopleEntity>) : RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
+class PeopleAdapter(private val list: List<PeopleEntity>) : RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
 
     class PeopleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val ivPerson: ImageView = view.findViewById(R.id.personImage)
-        val tvName: TextView = view.findViewById(R.id.personName)
-        val tvRole: TextView = view.findViewById(R.id.personRole)
+        private val ivPerson: ImageView = view.findViewById(R.id.personImage)
+        private val tvName: TextView = view.findViewById(R.id.personName)
+        private val tvRole: TextView = view.findViewById(R.id.personRole)
 
         fun render(person: PeopleEntity) {
             tvName.text = person.name
@@ -36,3 +34,4 @@ class PeopleAdapter(val list: List<PeopleEntity>) : RecyclerView.Adapter<PeopleA
         holder.render(list[position])
     }
 }
+
