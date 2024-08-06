@@ -12,12 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasic12"
         tools:targetApi="31">
+
         <activity
             android:name=".classassignments.assignment02.activity.RelativeLayoutExercise"
             android:exported="true" />
-
         <activity
-            android:name=".classassignments.assignment02.personslist.PersonListActivity"
+            android:name=".classassignments.assignment02.graphic_components.personslist.PersonListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
         </activity>
         <activity
             android:name=".classassignments.assignment02.graphic_components.HomeActivity"
-            android:exported="false"/>
+            android:exported="true"/>
         <activity
             android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
             android:exported="true" />
@@ -41,6 +41,9 @@
             android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.FrameLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".classassignments.assignment02.graphic_components.listpeople.PeopleListActivity"
             android:exported="true" />
     </application>
 

@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.ajea.androidbasic12.R
+import com.ajea.androidbasic12.classassignments.assignment02.graphic_components.listpeople.PeopleListActivity
+import com.ajea.androidbasic12.classassignments.assignment02.graphic_components.personslist.PersonListActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -19,6 +21,8 @@ class HomeActivity : AppCompatActivity() {
         val btnFrameLayout = findViewById<Button>(R.id.btnFrameLayout)
         val btnLinearLayout = findViewById<Button>(R.id.btnLinearLayout)
         val btnRelativeLayout = findViewById<Button>(R.id.btnRelativeLayout)
+        val btnPersonList = findViewById<Button>(R.id.btnPersonList)
+        val btnPeopleList = findViewById<Button>(R.id.btnPeopleList)
 
         btnComponents.setOnClickListener {
             val intent = Intent(this, ComponentsActivity::class.java)
@@ -42,6 +46,16 @@ class HomeActivity : AppCompatActivity() {
 
         btnRelativeLayout.setOnClickListener {
             val intent = Intent(this, RelativeLayoutActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnPersonList.setOnClickListener {
+            val intent = Intent(this, PersonListActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnPeopleList.setOnClickListener {
+            val intent = Intent(this, PeopleListActivity::class.java)
             startActivity(intent)
         }
     }
