@@ -29,6 +29,18 @@
           </Target>
         </DropdownSelection>
         <DialogSelection />
+      <SelectionState runConfigName="HomeActivity">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="AnimalListActivity">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="ConstraintLayoutActivity (1)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="PeopleListActivity">
+        <option name="selectionMode" value="DROPDOWN" />
+
       </SelectionState>
     </selectionStates>
   </component>
