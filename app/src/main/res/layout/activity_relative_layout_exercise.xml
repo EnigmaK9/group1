@@ -6,7 +6,7 @@
     android:background="#333334"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".classassignments.assignment02.activity.RelativeLayoutExercise">
+    tools:context=".classassignments.assignment02.graphic_components.RelativeLayoutExercise">
     <TextView
         android:id="@+id/tvEditProfile"
         android:text="Edit profile"

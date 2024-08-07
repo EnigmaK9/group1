@@ -59,7 +59,7 @@
         android:text="LinearLayout Activity"
         android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toBottomOf="@id/btnFrameLayout"
-        app:layout_constraintBottom_toTopOf="@id/btnRelativeLayout"
+        app:layout_constraintBottom_toTopOf="@id/btnRelativeLayoutExercise"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"
@@ -68,10 +68,10 @@
         android:layout_marginBottom="8dp" />
 
     <Button
-        android:id="@+id/btnRelativeLayout"
+        android:id="@+id/btnRelativeLayoutExercise"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="RelativeLayout Activity"
+        android:text="RelativeLayout Exercise"
         android:backgroundTint="#ED0F21"
         app:layout_constraintTop_toBottomOf="@id/btnLinearLayout"
         app:layout_constraintBottom_toTopOf="@id/btnPersonList"
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="Person List Activity"
         android:backgroundTint="#ED0F21"
-        app:layout_constraintTop_toBottomOf="@id/btnRelativeLayout"
+        app:layout_constraintTop_toBottomOf="@id/btnRelativeLayoutExercise"
         app:layout_constraintBottom_toTopOf="@id/btnPeopleList"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -8,13 +8,13 @@
       <SelectionState runConfigName="PersonListActivity (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="PeopleListActivity (1)">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="ComponentsActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="AnimalListActivity">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="RelativeLayoutExercise">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

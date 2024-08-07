@@ -13,7 +13,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".classassignments.assignment02.activity.RelativeLayoutExercise"
+            android:name=".classassignments.assignment02.graphic_components.RelativeLayoutExercise"
             android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.personslist.PersonListActivity"
