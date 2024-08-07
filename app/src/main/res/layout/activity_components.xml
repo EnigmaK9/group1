@@ -16,12 +16,12 @@
             android:id="@+id/tvLoseWeight"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/doubt_app_background"
             android:gravity="center"
+            android:padding="16dp"
             android:text=""
             android:textColor="#FFFFFF"
-            android:textSize="38sp"
-            android:background="@drawable/doubt_app_background"
-            android:padding="16dp" />
+            android:textSize="38sp" />
 
         <CheckBox
             android:id="@+id/cbLoseWeight"
@@ -43,6 +43,16 @@
         android:visibility="gone"
         android:padding="16dp"
         android:background="@drawable/weight_loss_app_background">
+
+        <TextView
+            android:id="@+id/tvSelectCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your country:"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
 
         <TextView
             android:id="@+id/tvSex"
@@ -78,16 +88,6 @@
                 android:textStyle="bold"
                 android:textSize="16sp" />
         </RadioGroup>
-
-        <TextView
-            android:id="@+id/tvSelectCountry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select your country:"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp" />
 
         <Spinner
             android:id="@+id/spinner"
