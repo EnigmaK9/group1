@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_navy_blue"
-    tools:context=".classassignments.assignment02.activity.FrameLayoutExercise">
+    tools:context=".classassignments.assignment02.graphic_components.FrameLayoutExercise">
 
     <ScrollView
         android:layout_width="match_parent"

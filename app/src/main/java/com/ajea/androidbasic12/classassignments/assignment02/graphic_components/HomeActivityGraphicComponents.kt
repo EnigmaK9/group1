@@ -25,7 +25,8 @@ class HomeActivity : AppCompatActivity() {
         val btnRelativeLayoutExercise = findViewById<Button>(R.id.btnRelativeLayoutExercise)  // Actualizado
         val btnPersonList = findViewById<Button>(R.id.btnPersonList)
         val btnPeopleList = findViewById<Button>(R.id.btnPeopleList)
-        val btnAnimalList = findViewById<Button>(R.id.btnAnimalList)  // Nuevo botón
+        val btnAnimalList = findViewById<Button>(R.id.btnAnimalList)
+        val btnFrameLayoutExercise = findViewById<Button>(R.id.btnFrameLayoutExercise)
 
         btnComponents.setOnClickListener {
             val intent = Intent(this, ComponentsActivity::class.java)
@@ -64,6 +65,11 @@ class HomeActivity : AppCompatActivity() {
 
         btnAnimalList.setOnClickListener {
             val intent = Intent(this, AnimalListActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnFrameLayoutExercise.setOnClickListener {
+            val intent = Intent(this, FrameLayoutExercise::class.java)
             startActivity(intent)
         }
     }
