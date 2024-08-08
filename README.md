@@ -1,6 +1,3 @@
-Here's the updated README for your Android App Development assignment with the sections rearranged and the new demo added for the second exercise:
-
----
 
 # 📱💻 Mobile application development - Module 4 Assignments 📱💻
 
