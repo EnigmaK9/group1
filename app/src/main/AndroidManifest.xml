@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -11,44 +12,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasic12"
         tools:targetApi="31">
-
         <activity
             android:name=".classassignments.assignment02.activity.FrameLayoutExercise"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.RelativeLayoutExercise"
             android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.personslist.PersonListActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
+
         <activity
             android:name=".classassignments.assignment02.graphic_components.HomeActivity"
-            android:exported="true"/>
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
             android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.ConstraintLayoutActivity"
             android:exported="true" />
-        <activity
-            android:name=".classassignments.assignment02.graphic_components.RelativeLayoutActivity"
-            android:exported="true" />
+
         <activity
             android:name=".classassignments.assignment02.graphic_components.LinearLayoutActivity"
             android:exported="true" />
         <activity
             android:name=".classassignments.assignment02.graphic_components.FrameLayoutActivity"
-            android:exported="true" />
-        <activity
-            android:name=".classassignments.assignment02.graphic_components.listpeople.PeopleListActivity"
-            android:exported="true" />
-        <activity
-            android:name=".classassignments.assignment02.graphic_components.list.AnimalListActivity"
             android:exported="true" />
     </application>
 
