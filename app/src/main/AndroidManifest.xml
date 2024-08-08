@@ -36,9 +36,6 @@
             android:name=".classassignments.assignment02.graphic_components.ConstraintLayoutActivity"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.RelativeLayoutActivity"
-            android:exported="true" />
-        <activity
             android:name=".classassignments.assignment02.graphic_components.LinearLayoutActivity"
             android:exported="true" />
         <activity
