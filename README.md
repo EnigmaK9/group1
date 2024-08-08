@@ -1,6 +1,3 @@
-Here's the updated README for your Android App Development assignment with the sections rearranged and the new demo added for the second exercise:
-
----
 
 # 📱💻 Mobile application development - Module 4 Assignments 📱💻
 
@@ -42,7 +39,7 @@ Create an Activity with its respective XML and design an interface for each poin
 - TextView, ImageView, EditText, Button, ImageButton, Checkbox, RadioButton, and Spinner: **3 points**
 - RecyclerView: **3 points**
 
-### Demo: (huge gif, wait for it to load)
+### Demo: (huge gif, wait for it to load. Can be seen in gif/optimized_demo.gif)
 
 <p align="center">
   <img src="gif/optimized_demo.gif" alt="App Demo for Exercise 2" width="300">
