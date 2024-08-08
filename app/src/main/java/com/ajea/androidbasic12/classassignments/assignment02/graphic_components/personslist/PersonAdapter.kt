@@ -1,4 +1,4 @@
-package com.ajea.androidbasic12.classassignments.assignment02.personslist
+package com.ajea.androidbasic12.classassignments.assignment02.graphic_components.personslist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -24,6 +24,7 @@ class PersonAdapter(val list: List<PersonEntity>): RecyclerView.Adapter<PersonAd
                     "w4" -> R.drawable.w4
                     "w5" -> R.drawable.w5
                     "w6" -> R.drawable.w6
+                    "w7" -> R.drawable.male05
                     else -> R.mipmap.ic_launcher
                 }
             )
