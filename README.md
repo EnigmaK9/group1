@@ -1,4 +1,8 @@
-# 📱💻 Android App Development with Kotlin - Module 4 Assignment 📱💻
+Here's the updated README for your Android App Development assignment with the sections rearranged and the new demo added for the second exercise:
+
+---
+
+# 📱💻 Mobile application development - Module 4 Assignments 📱💻
 
 ## Team Members:
 
@@ -6,11 +10,43 @@
 - Giovanni Sebastian Verastegui Perez
 - Alan Ulises Mendoza Gonzalez
 
-### Demo:
+## Exercise 2 - Graphic Components
 
-![App Demo](gif/recording3.gif)
+### Objective:
 
-## Course: Android App Development with Kotlin
+The participant will practice the concepts of the main components used to design the graphical interfaces of an application. They will also reinforce the creation of graphical interfaces with basic, selection, and navigation components available in Android, using XML files.
+
+### Instructions:
+
+Create an Activity with its respective XML and design an interface for each point described below:
+
+- Graphical interface design using FrameLayout
+- Graphical interface design using LinearLayout
+- Graphical interface design using RelativeLayout
+- Graphical interface design using ConstrainLayout
+- Graphical interface design using TextView, ImageView, EditText, Button, ImageButton, Checkbox, RadioButton, and Spinner.
+- Graphical interface design using RecyclerView
+
+### Additional Considerations:
+
+- Use each component seen at least once.
+- Creativity in the use of said component.
+- The project can be shared via a public repository. Please share the link to your project repository so that it can be cloned without any issues by anyone for review.
+
+### Evaluation Elements:
+
+- FrameLayout: **1 point**
+- LinearLayout: **1 point**
+- RelativeLayout: **1 point**
+- ConstrainLayout: **1 point**
+- TextView, ImageView, EditText, Button, ImageButton, Checkbox, RadioButton, and Spinner: **3 points**
+- RecyclerView: **3 points**
+
+### Demo: (huge gif, wait for it to load)
+
+<p align="center">
+  <img src="gif/optimized_demo.gif" alt="App Demo for Exercise 2" width="300">
+</p>
 
 ## Exercises 1 - Activities
 
