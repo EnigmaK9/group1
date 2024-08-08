@@ -1,10 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_navy_blue"
     tools:context=".classassignments.assignment02.activity.FrameLayoutExercise">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_sport_details"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvFavoriteSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favorite_sport"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/etFavoriteSport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_favorite_sport"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tvExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/experience_sport"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/etExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_experience"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="textMultiLine"
+                android:lines="4"/>
+
+            <!-- Preguntas adicionales -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (cm):"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your height"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg):"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your weight"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How often do you exercise per week?"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the number of times"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferred exercise type (e.g., cardio, strength training):"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your preferred exercise type"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How long do you usually exercise per session (minutes)?"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the duration"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you have any injuries or conditions that affect your training?"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter details if any"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@android:color/darker_gray"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/holo_blue_light"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:minHeight="48dp"
+                android:minWidth="64dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">AndroidBasic12</string>
+
+
+        <string name="register_sport_details">Register Sport Details</string>
+        <string name="favorite_sport">Favorite Sport:</string>
+        <string name="experience_sport">Experience with the Sport:</string>
+        <string name="hint_favorite_sport">Enter your favorite sport</string>
+        <string name="hint_experience">Describe your experience</string>
+        <string name="save">Save</string>
+        <string name="height">Height (cm):</string>
+        <string name="hint_height">Enter your height</string>
+        <string name="weight">Weight (kg):</string>
+        <string name="hint_weight">Enter your weight</string>
+        <string name="exercise_frequency">How often do you exercise per week?</string>
+        <string name="hint_exercise_frequency">Enter the number of times</string>
+        <string name="exercise_type">Preferred exercise type (e.g., cardio, strength training):</string>
+        <string name="hint_exercise_type">Enter your preferred exercise type</string>
+        <string name="exercise_duration">How long do you usually exercise per session (minutes)?</string>
+        <string name="hint_exercise_duration">Enter the duration</string>
+        <string name="injuries">Do you have any injuries or conditions that affect your training?</string>
+        <string name="hint_injuries">Enter details if any</string>
+
+
+
 </resources>
