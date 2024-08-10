@@ -13,13 +13,13 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".classassignments.assignment02.graphic_components.FrameLayoutExercise"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.FrameLayoutExercise"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.RelativeLayoutExercise"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.RelativeLayoutExercise"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.personslist.PersonListActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.personslist.PersonListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,25 +27,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".classassignments.assignment02.graphic_components.HomeActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.HomeActivity"
             android:exported="true"/>
         <activity
-            android:name=".classassignments.assignment02.graphic_components.ComponentsActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.ComponentsActivity"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.ConstraintLayoutActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.ConstraintLayoutActivity"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.LinearLayoutActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.LinearLayoutActivity"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.FrameLayoutActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.FrameLayoutActivity"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.listpeople.PeopleListActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.listpeople.PeopleListActivity"
             android:exported="true" />
         <activity
-            android:name=".classassignments.assignment02.graphic_components.list.AnimalListActivity"
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.list.AnimalListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.ajea.androidbasic12.classassignments.assignment02.graphic_components.HistoryActivity"
             android:exported="true" />
     </application>
 

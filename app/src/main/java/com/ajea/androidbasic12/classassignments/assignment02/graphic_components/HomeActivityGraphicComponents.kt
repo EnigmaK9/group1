@@ -8,7 +8,7 @@ import com.ajea.androidbasic12.R
 import com.ajea.androidbasic12.classassignments.assignment02.graphic_components.list.AnimalListActivity
 import com.ajea.androidbasic12.classassignments.assignment02.graphic_components.listpeople.PeopleListActivity
 import com.ajea.androidbasic12.classassignments.assignment02.graphic_components.personslist.PersonListActivity
-import com.ajea.androidbasic12.classassignments.assignment02.graphic_components.RelativeLayoutExercise
+import missing.namespace.R
 
 class HomeActivity : AppCompatActivity() {
 
