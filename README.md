@@ -1,4 +1,3 @@
-
 # 📱💻 Mobile application development - Module 4 Assignments 📱💻
 
 ## Team Members:
@@ -78,4 +77,40 @@ Create a project using the official Android Studio IDE that includes the followi
   <img src="gif/recording3.gif" alt="App Demo 1" width="300">
   <img src="gif/recording2.gif" alt="App Demo 2" width="300">
   <img src="gif/recording.gif" alt="App Demo 3" width="300">
+</p>
+
+## Exercise 3 - RegistroApp
+
+### Objective:
+
+The participant will develop a registration application to practice the integration of various Android components and user interaction handling.
+
+### Instructions:
+
+Create an Activity with its respective XML and design a registration interface that includes the following components:
+
+- TextInput for username
+- TextInput for email
+- TextInput for password
+- Button to submit the registration
+- Display a Toast message upon successful registration
+
+### Additional Considerations:
+
+- Ensure proper input validation for email format and password strength.
+- Use of appropriate layout managers and styles for a visually appealing design.
+- The project can be shared via a public repository. Please share the link to your project repository so that it can be cloned without any issues for review.
+
+### Evaluation Elements:
+
+- Username input: **2 points**
+- Email input: **2 points**
+- Password input: **2 points**
+- Submit button: **2 points**
+- Toast message: **2 points**
+
+### Demo: (wait for it to load)
+
+<p align="center">
+  <img src="gif/registroapp.gif" alt="RegistroApp Demo" width="300">
 </p>
