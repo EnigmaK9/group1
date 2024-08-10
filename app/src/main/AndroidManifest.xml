@@ -47,6 +47,13 @@
         <activity
             android:name=".classassignments.assignment02.graphic_components.list.AnimalListActivity"
             android:exported="true" />
+        <!-- Nuevas actividades añadidas -->
+        <activity
+            android:name=".homework.carlospadilla.RegistroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".homework.carlospadilla.RegistroDetalleActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
