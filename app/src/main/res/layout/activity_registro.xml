@@ -5,14 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".homework.carlospadilla.RegistroActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Name"
-        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/input_background"
+        android:textColor="@color/input_text"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
@@ -22,6 +35,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Last Name"
+        android:backgroundTint="@color/input_background"
+        android:textColor="@color/input_text"
         app:layout_constraintTop_toBottomOf="@id/etName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,6 +47,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Email"
+        android:backgroundTint="@color/input_background"
+        android:textColor="@color/input_text"
         app:layout_constraintTop_toBottomOf="@id/etLastName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,19 +67,22 @@
             android:id="@+id/rbMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male" />
+            android:text="Male"
+            android:textColor="@color/radio_button_text" />
 
         <RadioButton
             android:id="@+id/rbFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female" />
+            android:text="Female"
+            android:textColor="@color/radio_button_text" />
 
         <RadioButton
             android:id="@+id/rbNotSpecified"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Not Specified" />
+            android:text="Not Specified"
+            android:textColor="@color/radio_button_text" />
     </RadioGroup>
 
     <EditText
@@ -71,6 +91,8 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
+        android:backgroundTint="@color/input_background"
+        android:textColor="@color/input_text"
         app:layout_constraintTop_toBottomOf="@id/rgGender"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,6 +103,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/etPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
